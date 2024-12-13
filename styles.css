@@ -1,33 +1,105 @@
+/* Light Mode (Default) */
+:root {
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --header-background: #4a90e2;
+    --header-text-color: #fff;
+    --link-color: #4a90e2;
+    --link-hover-color: #003f88;
+    --button-bg: #4a90e2;
+    --button-text: #fff;
+    --section-background: #fff;
+    --footer-background: #333;
+    --footer-text-color: #fff;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --header-background: #1e88e5;
+    --header-text-color: #e0e0e0;
+    --link-color: #bb86fc;
+    --link-hover-color: #3700b3;
+    --button-bg: #1e88e5;
+    --button-text: #e0e0e0;
+    --section-background: #1d1d1d;
+    --footer-background: #1e1e1e;
+    --footer-text-color: #e0e0e0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
+
 header {
-    background: #333;
-    color: #fff;
+    background: var(--header-background);
+    color: var(--header-text-color);
     padding: 10px 20px;
 }
+
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
 }
+
 header nav ul li {
     display: inline;
-    margin: 0 10px;
 }
+
 header nav ul li a {
-    color: #fff;
+    color: var(--header-text-color);
     text-decoration: none;
+    font-weight: bold;
 }
+
+header nav ul li a:hover {
+    color: var(--link-hover-color);
+}
+
 section {
     padding: 20px;
     margin: 20px 0;
+    background-color: var(--section-background);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
-    color: #fff;
+    background: var(--footer-background);
+    color: var(--footer-text-color);
+}
+
+/* Button Styling */
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--link-hover-color);
+}
+
+/* Add responsiveness for better mobile experience */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
