@@ -35,6 +35,10 @@ body {
     line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
+    background-image: url('image/background.jpg'); /* Path to your background image */
+    background-size: cover;  /* Ensures the image covers the entire body */
+    background-position: center;  /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
 }
 
 header {
@@ -81,21 +85,6 @@ section {
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
-}
-
-/* Add background image and overlay to section */
-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('image/background.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.5); /* Optional: darken the background */
-    z-index: -1; /* Place it behind the content */
 }
 
 h1, h2 {
