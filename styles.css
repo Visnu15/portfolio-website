@@ -1,7 +1,7 @@
 /* Light Mode (Default) */
 :root {
     /* --background-color: #f4f4f9; */
-    --text-color: #333;
+    --text-color: #ffffff;
     --header-background: #b84451;
     --header-text-color: #fff;
     --link-color: #4a90e2;
@@ -79,7 +79,11 @@ section {
     padding: 30px;
     margin: 80px auto;
     max-width: 1200px;
-    background-color: var(--section-background);
+    /* background-color: var(--section-background); */
+    background-image: url('image/bg1.jpg'); /* Path to your background image */
+    background-size: cover;  /* Ensures the image covers the entire body */
+    background-position: center;  /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     position: relative;
