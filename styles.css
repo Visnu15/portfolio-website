@@ -17,7 +17,7 @@
 [data-theme="dark"] {
     --background-color: #121212; /* Dark background color */
     --text-color: #e0e0e0; /* Light text color for dark mode */
-    --header-background: #1e88e5; /* Blue header background for dark mode */
+    --header-background: #000000; /* Blue header background for dark mode */
     --header-text-color: #e0e0e0; /* Light header text */
     --link-color: #bb86fc; /* Light purple links */
     --link-hover-color: #3700b3; /* Dark purple link hover effect */
