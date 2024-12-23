@@ -1,49 +1,51 @@
 /* Light Mode (Default) */
 :root {
-    /* --background-color: #f4f4f9; */
-    --text-color: #ffffff;
-    --header-background: #b84451;
-    --header-text-color: #fff;
-    --link-color: #4a90e2;
-    --link-hover-color: #003f88;
-    --button-bg: #4a90e2;
-    --button-text: #fff;
-    --section-background: #fff;
-    --footer-background: #333;
-    --footer-text-color: #fff;
+    --background-color: #f4f4f9;
+    --text-color: #ffffff; /* Light text color */
+    --header-background: #b84451; /* Red header background */
+    --header-text-color: #fff; /* White header text */
+    --link-color: #4a90e2; /* Blue link color */
+    --link-hover-color: #003f88; /* Dark blue link hover color */
+    --button-bg: #4a90e2; /* Blue button background */
+    --button-text: #fff; /* White button text */
+    --section-background: #fff; /* White section background */
+    --footer-background: #333; /* Dark footer background */
+    --footer-text-color: #fff; /* White footer text */
 }
 
 /* Dark Mode */
 [data-theme="dark"] {
-    --background-color: #121212;
-    --text-color: #e0e0e0;
-    --header-background: #1e88e5;
-    --header-text-color: #e0e0e0;
-    --link-color: #bb86fc;
-    --link-hover-color: #3700b3;
-    --button-bg: #1e88e5;
-    --button-text: #e0e0e0;
-    --section-background: #1d1d1d;
-    --footer-background: #1e1e1e;
-    --footer-text-color: #e0e0e0;
+    --background-color: #121212; /* Dark background color */
+    --text-color: #e0e0e0; /* Light text color for dark mode */
+    --header-background: #1e88e5; /* Blue header background for dark mode */
+    --header-text-color: #e0e0e0; /* Light header text */
+    --link-color: #bb86fc; /* Light purple links */
+    --link-hover-color: #3700b3; /* Dark purple link hover effect */
+    --button-bg: #1e88e5; /* Blue button background for dark mode */
+    --button-text: #e0e0e0; /* Light button text */
+    --section-background: #1d1d1d; /* Dark section background */
+    --footer-background: #1e1e1e; /* Dark footer background */
+    --footer-text-color: #e0e0e0; /* Light footer text */
 }
 
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    /* background-color: var(--background-color); */
-    color: var(--text-color);
-    background-image: url('image/background.jpg'); /* Path to your background image */
-    background-size: cover;  /* Ensures the image covers the entire body */
+    /* background-color: var(--background-color); Background color based on theme */
+    color: var(--text-color); /* Text color based on theme */
+    background-image: url('image/background.jpg'); /* Background image for body */
+    background-size: cover;  /* Ensures image covers the entire body */
     background-position: center;  /* Centers the background image */
-    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
 }
 
+/* Header Styles */
 header {
-    background: var(--header-background);
-    color: var(--header-text-color);
+    background: var(--header-background); /* Header background based on theme */
+    color: var(--header-text-color); /* Header text color based on theme */
     padding: 15px 20px;
     position: fixed;
     width: 100%;
@@ -65,27 +67,27 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: var(--header-text-color);
+    color: var(--header-text-color); /* Link color in header */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: var(--link-hover-color);
+    color: var(--link-hover-color); /* Link hover color */
 }
 
+/* Section Styles */
 section {
     padding: 30px;
-    margin: 80px auto;
+    margin: 80px auto; /* Adds space for fixed header */
     max-width: 1200px;
-    /* background-color: var(--section-background); */
-    background-image: url('image/bg1.jpg'); /* Path to your background image */
-    background-size: cover;  /* Ensures the image covers the entire body */
+    background-image: url('image/bg1.jpg'); /* Background image for sections */
+    background-size: cover;  /* Ensures the image covers the entire section */
     background-position: center;  /* Centers the background image */
     background-attachment: fixed; /* Keeps the background image fixed when scrolling */
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around section */
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -93,7 +95,7 @@ section {
 
 h1, h2 {
     text-align: center;
-    color: var(--header-background);
+    color: var(--header-background); /* Header text color in section */
 }
 
 ul {
@@ -104,16 +106,18 @@ ul li {
     margin: 10px 0;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 15px;
-    background: var(--footer-background);
-    color: var(--footer-text-color);
+    background: var(--footer-background); /* Footer background based on theme */
+    color: var(--footer-text-color); /* Footer text color based on theme */
 }
 
+/* Button Styles */
 button {
-    background-color: var(--button-bg);
-    color: var(--button-text);
+    background-color: var(--button-bg); /* Button background color based on theme */
+    color: var(--button-text); /* Button text color */
     border: none;
     padding: 12px 25px;
     border-radius: 5px;
@@ -123,10 +127,11 @@ button {
 }
 
 button:hover {
-    background-color: var(--link-hover-color);
-    transform: scale(1.1);
+    background-color: var(--link-hover-color); /* Button hover effect */
+    transform: scale(1.1); /* Button scale effect on hover */
 }
 
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -146,16 +151,16 @@ form button {
     margin-top: 15px;
 }
 
-/* Add responsiveness for better mobile experience */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     header nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Stacks navigation items vertically */
         gap: 10px;
     }
     section {
-        padding: 20px;
+        padding: 20px; /* Reduces padding for smaller screens */
     }
     form input, form textarea {
-        width: 100%;
+        width: 100%; /* Makes form inputs full width on smaller screens */
     }
 }
