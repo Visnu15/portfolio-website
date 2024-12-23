@@ -29,7 +29,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -40,7 +40,11 @@ body {
 header {
     background: var(--header-background);
     color: var(--header-text-color);
-    padding: 10px 20px;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
 header nav ul {
@@ -48,7 +52,8 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    gap: 20px;
 }
 
 header nav ul li {
@@ -59,6 +64,7 @@ header nav ul li a {
     color: var(--header-text-color);
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
@@ -66,34 +72,68 @@ header nav ul li a:hover {
 }
 
 section {
-    padding: 20px;
-    margin: 20px 0;
+    padding: 30px;
+    margin: 80px auto;
+    max-width: 1200px;
     background-color: var(--section-background);
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--header-background);
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul li {
+    margin: 10px 0;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background: var(--footer-background);
     color: var(--footer-text-color);
 }
 
-/* Button Styling */
 button {
     background-color: var(--button-bg);
     color: var(--button-text);
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s ease;
 }
 
 button:hover {
     background-color: var(--link-hover-color);
+    transform: scale(1.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 50%;
+    margin-top: 15px;
 }
 
 /* Add responsiveness for better mobile experience */
@@ -101,5 +141,11 @@ button:hover {
     header nav ul {
         flex-direction: column;
         gap: 10px;
+    }
+    section {
+        padding: 20px;
+    }
+    form input, form textarea {
+        width: 100%;
     }
 }
