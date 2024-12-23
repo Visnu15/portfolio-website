@@ -1,6 +1,6 @@
 /* Light Mode (Default) */
 :root {
-    --background-color: #f4f4f9;
+    /* --background-color: #f4f4f9; */
     --text-color: #333;
     --header-background: #4a90e2;
     --header-text-color: #fff;
@@ -33,7 +33,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     color: var(--text-color);
     background-image: url('image/background.jpg'); /* Path to your background image */
     background-size: cover;  /* Ensures the image covers the entire body */
