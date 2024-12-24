@@ -1,7 +1,7 @@
 /* Light Mode (Default) */
 :root {
     --background-color: #f4f4f9;
-    --text-color: #ffffff; /* Light text color */
+    --text-color: #000000; /* Light text color */
     --header-background: #c5eaf7; /* Red header background */
     --header-text-color: #13baed; /* White header text */
     --link-color: #4a90e2; /* Blue link color */
