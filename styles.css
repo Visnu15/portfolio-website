@@ -186,3 +186,9 @@ form button {
     }
 }
 
+#home p {
+    text-align: center; /* Center the paragraph text */
+    font-size: 1.2rem; /* Adjusted font size */
+    font-weight: bold;
+    color: var(--text-color); /* Ensures the text color follows the theme */
+}
