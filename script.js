@@ -15,3 +15,20 @@ toggleButton.addEventListener("click", () => {
     toggleButton.textContent = currentTheme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode";
     localStorage.setItem("theme", currentTheme); // Save user preference
 });
+
+// Select all the sections to observe
+const sections = document.querySelectorAll('section');
+
+// Create an IntersectionObserver instance
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Add the 'visible' class when the section is in view
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Stop observing once it becomes visible
+        }
+    });
+}, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+// Observe each section
+sections.forEach(section => observer.observe(section));

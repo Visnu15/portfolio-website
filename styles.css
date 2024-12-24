@@ -83,6 +83,9 @@ header nav ul li a:hover {
 
 /* Section Styles */
 section {
+    opacity: 0; /* Initially invisible */
+    transform: translateY(50px); /* Start 50px down from their original position */
+    transition: opacity 0.5s, transform 0.5s;
     padding: 30px;
     margin: 80px auto; /* Adds space for fixed header */
     max-width: 1200px;
@@ -95,6 +98,11 @@ section {
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
+}
+
+section.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Slide into place */
 }
 
 h1, h2 {
