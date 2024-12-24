@@ -11,8 +11,8 @@
     --section-background: #fff; /* White section background */
     --footer-background: #333; /* Dark footer background */
     --footer-text-color: #fff; /* White footer text */
-    --body-bg-image: url('BG_body.webp'); /* Background for body */
-    --section-bg-image: url('BG_sec.webp'); /* Background for sections */
+    --body-bg-image: url('image/BG_body.webp'); /* Background for body */
+    --section-bg-image: url('image/BG_body.jpeg'); /* Background for sections */
 }
 
 /* Dark Mode */
