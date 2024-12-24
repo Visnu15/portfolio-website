@@ -105,9 +105,19 @@ section.visible {
     transform: translateY(0); /* Slide into place */
 }
 
+section:hover {
+    transform: scale(1.05); /* Slightly scale the section on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Increase shadow to emphasize the effect */
+}
+
 h1, h2 {
     text-align: center;
     color: var(--header-text-color); /* Header text color in section */
+    transition: transform 0.3s ease;
+}
+
+section:hover h1, section:hover h2 {
+    transform: translateY(-5px); /* Slightly move the header up when the section is hovered */
 }
 
 ul {
