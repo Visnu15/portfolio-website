@@ -2,8 +2,8 @@
 :root {
     --background-color: #f4f4f9;
     --text-color: #ffffff; /* Light text color */
-    --header-background: #b84451; /* Red header background */
-    --header-text-color: #fff; /* White header text */
+    --header-background: #c5eaf7; /* Red header background */
+    --header-text-color: #13baed; /* White header text */
     --link-color: #4a90e2; /* Blue link color */
     --link-hover-color: #003f88; /* Dark blue link hover color */
     --button-bg: #4a90e2; /* Blue button background */
@@ -11,6 +11,8 @@
     --section-background: #fff; /* White section background */
     --footer-background: #333; /* Dark footer background */
     --footer-text-color: #fff; /* White footer text */
+    --body-bg-image: url('BG_body.jpeg'); /* Background for body */
+    --section-bg-image: url('BG_sec.webp'); /* Background for sections */
 }
 
 /* Dark Mode */
@@ -26,6 +28,8 @@
     --section-background: #1d1d1d; /* Dark section background */
     --footer-background: #1e1e1e; /* Dark footer background */
     --footer-text-color: #e0e0e0; /* Light footer text */
+    --body-bg-image: url('image/background.jpg'); /* Background for body */
+    --section-bg-image: url('image/bg1.jpg'); /* Background for sections */
 }
 
 /* Global Styles */
@@ -36,7 +40,7 @@ body {
     line-height: 1.6;
     /* background-color: var(--background-color); Background color based on theme */
     color: var(--text-color); /* Text color based on theme */
-    background-image: url('image/background.jpg'); /* Background image for body */
+    background-image: var(--body-bg-image); /* Background image for body */
     background-size: cover;  /* Ensures image covers the entire body */
     background-position: center;  /* Centers the background image */
     background-attachment: fixed; /* Keeps the background image fixed while scrolling */
@@ -82,7 +86,7 @@ section {
     padding: 30px;
     margin: 80px auto; /* Adds space for fixed header */
     max-width: 1200px;
-    background-image: url('image/bg1.jpg'); /* Background image for sections */
+    background-image: var(--section-bg-image); /* Background image for sections */
     background-size: cover;  /* Ensures the image covers the entire section */
     background-position: center;  /* Centers the background image */
     background-attachment: fixed; /* Keeps the background image fixed when scrolling */
