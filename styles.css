@@ -92,7 +92,7 @@ section {
     background-image: var(--section-bg-image); /* Background image for sections */
     background-size: cover;  /* Ensures the image covers the entire section */
     background-position: center;  /* Centers the background image */
-    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+    /* background-attachment: fixed; Keeps the background image fixed when scrolling */
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around section */
     position: relative;
