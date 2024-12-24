@@ -2,8 +2,8 @@
 :root {
     --background-color: #f4f4f9;
     --text-color: #000000; /* Light text color */
-    --header-background: #c5eaf7; /* Red header background */
-    --header-text-color: #13baed; /* White header text */
+    --header-background: #F0F0F0; /* Red header background */
+    --header-text-color: #333333; /* White header text */
     --link-color: #4a90e2; /* Blue link color */
     --link-hover-color: #003f88; /* Dark blue link hover color */
     --button-bg: #4a90e2; /* Blue button background */
@@ -11,7 +11,7 @@
     --section-background: #fff; /* White section background */
     --footer-background: #333; /* Dark footer background */
     --footer-text-color: #fff; /* White footer text */
-    --body-bg-image: url('BG_body.jpeg'); /* Background for body */
+    --body-bg-image: url('BG_body.webp'); /* Background for body */
     --section-bg-image: url('BG_sec.webp'); /* Background for sections */
 }
 
