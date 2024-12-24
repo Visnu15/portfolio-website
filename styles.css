@@ -157,14 +157,32 @@ form button {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    /* Optimize Header */
+    header {
+        padding: 10px 15px; /* Reduce padding to make it compact */
+    }
+
     header nav ul {
         flex-direction: column; /* Stacks navigation items vertically */
-        gap: 10px;
+        gap: 5px; /* Further reduce the gap between items */
     }
+
+    header nav ul li {
+        margin: 5px 0; /* Adjust item margins for a compact look */
+    }
+
+    header h1, header h2 {
+        font-size: 18px; /* Decrease font size for headings */
+    }
+
+    /* Optimize Section */
     section {
-        padding: 20px; /* Reduces padding for smaller screens */
+        padding: 20px; /* Retain reduced padding for sections */
     }
+
+    /* Optimize Form */
     form input, form textarea {
-        width: 100%; /* Makes form inputs full width on smaller screens */
+        width: 100%; /* Ensure full width for inputs */
     }
 }
+
