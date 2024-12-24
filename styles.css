@@ -95,7 +95,7 @@ section {
 
 h1, h2 {
     text-align: center;
-    color: var(--header-background); /* Header text color in section */
+    color: var(--header-text-color); /* Header text color in section */
 }
 
 ul {
