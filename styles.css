@@ -29,7 +29,7 @@
     --footer-background: #1e1e1e; /* Dark footer background */
     --footer-text-color: #e0e0e0; /* Light footer text */
     --body-bg-image: url('image/background.jpg'); /* Background for body */
-    --section-bg-image: url('image/bg1.jpg'); /* Background for sections */
+    --section-bg-image: url('image/dark.avif'); /* Background for sections */
 }
 
 /* Global Styles */
@@ -92,7 +92,7 @@ section {
     background-image: var(--section-bg-image); /* Background image for sections */
     background-size: cover;  /* Ensures the image covers the entire section */
     background-position: center;  /* Centers the background image */
-    /* background-attachment: fixed; Keeps the background image fixed when scrolling */
+    background-attachment: fixed; /*Keeps the background image fixed when scrolling*/
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around section */
     position: relative;
